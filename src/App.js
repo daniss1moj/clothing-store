@@ -1,6 +1,6 @@
 import Home from "./components/routes/home/Home";
 import Navigation from "./components/routes/navigation/Navigation";
-import SignIn from "./components/routes/sign-in/SignIn";
+import Authentication from "./components/routes/sign-in/Authentication";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigation/>}>
           <Route index element={<Home/>}/>
-          <Route path="signin" element={<SignIn/>}/>
+          <Route path="auth" element={<Authentication/>}/>
         </Route>
       </Routes>
     </Router>
